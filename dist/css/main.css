@@ -1,14 +1,13 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
+CONTENT:	S'Mores Builder
+AUTHOR:		Eric Canosa
 ==============================================
 
 TABLE OF CONTENTS:
 
 0. Reset
-1. Main Layout
-2. Content
+1. STYLES
 
 ==============================================
 */
@@ -148,8 +147,92 @@ table {
 	border-spacing: 0;
 }
 
-/* 1. Main Layout ================================= */
+/* 1. STYLES ================================= */
 
+body{
+	box-sizing: border-box;
+	font-family: Verdana, sans-serif;
+	background: #dacebe;
+}
 
+header{
+	display: flex;
+	flex-wrap: wrap;
+}
 
-/* 2. Content ================================= */
+header section{
+	order: -1;
+	width: 100%;
+	display: flex;
+}
+
+header div{
+	margin:auto;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+header h1{
+	display: inline;
+}
+
+header ul{
+	display: flex;
+}
+
+header figure{
+	margin: auto;
+	width: 100%;
+}
+
+header figure a{
+	text-decoration: none;
+	color: white;
+	display:flex;
+}
+
+header img{
+	height: 100px;
+	margin: 0vh 0.3vw;
+}
+
+header h1{
+	font-size: 4.75rem;
+	letter-spacing: .3rem;
+	margin: 3vh 0vw 1vh;
+}
+
+header h1:first-child{
+	margin-left:auto;
+}
+
+header h1:last-child{
+	margin-right:auto;
+}
+
+header p{
+	color: white;
+	margin: 0vh auto 2vh;
+}
+
+nav a{
+	color: red;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav li{
+	margin: 0px 1vw;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+}
+
+header nav:first-child{
+	margin-left:auto;
+}
+
+header nav:last-child{
+	margin-right:auto;
+}
