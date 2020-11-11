@@ -7,31 +7,24 @@
 	<title> Smores </title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=PT+Serif&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/main.css">
 
 </head>
 
 <body>
 	<header>
+		<div>
+			<img src="dist/img/logo.png" alt="logo">
+		</div>
+		<p>
+			Celebrate National S'mores Day Every Day
+		</p>
 		<nav>
 			<ul>
 				<li><a href="">Home</a></li>
 				<li><a href="">S'Mores Builder</a></li>
-			</ul>
-		</nav>
-		<section>
-			<div>
-				<figure>
-					<a href=""><h1>s'm</h1><img src="dist/img/marshmallow.png" alt="marshmallow"><h1>res</h1></a>
-				</figure>
-				<p>
-					Celebrate National S'mores Day Every Day
-				</p>
-			</div>
-		</section>
-		<nav>
-			<ul>
 				<li><a href="">Throw A Party</a></li>
 				<li><a href="">Tumblr</a></li>
 			</ul>
@@ -39,16 +32,16 @@
 	</header>
 
 	<section class="intro">
-		<h2>S'mores Builder</h2>
+		<h1>S'mores Builder</h1>
 		<p>
 			This is your chance to get creative. As long as you have a roasted marshmallow sandwiched between something with some chocolate added, I say you got a s'mores. So pick your frame, marshmallow, and candy, add an optional accessory or two, and build a crazy s'mores concoction.
 		</p>
 	</section>
 
-	<section class="builder">
+	<form class="builder">
 		<div>
-			<img src="dist/img/graham.png" alt="graham">
-			<h3>Frame</h3>
+			<figure class="graham"></figure>
+			<h2>Frame</h2>
 			<input type="radio" name="frame" value="graham crackers">
 				<label for="graham crackers">graham crackers</label>
 			<input type="radio" name="frame" value="cinnamon grahams">
@@ -67,65 +60,65 @@
 				<label for="other">Other: </label> <input type="text" name="other-graham">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 		</div>
 		<div>
-			<img src="dist/img/mallow.png" alt="marshmallow">
-			<h3>Marshmallow</h3>
-			<input type="radio" name="frame" value="plain marshmallow">
+			<figure class="marshmallow"></figure>
+			<h2>Marshmallow</h2>
+			<input type="radio" name="marshmallow" value="plain marshmallow">
 				<label for="plain marshmallow">plain marshmallow</label>
-			<input type="radio" name="frame" value="chocolate 'mallow">
+			<input type="radio" name="marshmallow" value="chocolate 'mallow">
 				<label for="chocolate 'mallow">chocolate 'mallow</label>
-			<input type="radio" name="frame" value="strawberry 'mallow">
+			<input type="radio" name="marshmallow" value="strawberry 'mallow">
 				<label for="strawberry 'mallow">strawberry 'mallow</label>
-			<input type="radio" name="frame" value="giant 'mallow">
+			<input type="radio" name="marshmallow" value="giant 'mallow">
 				<label for="giant 'mallow">giant 'mallow</label>
-			<input type="radio" name="frame" value="other">
+			<input type="radio" name="marshmallow" value="other">
 				<label for="other">Other: </label> <input type="text" name="other-mallow">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 		</div>
 		<div>
-			<img src="dist/img/chocolate.png" alt="chocolate">
-			<h3>Candy</h3>
-			<input type="radio" name="frame" value="Hershey's chocolate">
+			<figure class="candy"></figure>
+			<h2>Candy</h2>
+			<input type="radio" name="candy" value="Hershey's chocolate">
 				<label for="Hershey's chocolate">Hershey's chocolate</label>
-			<input type="radio" name="frame" value="dark chocolate">
+			<input type="radio" name="candy" value="dark chocolate">
 				<label for="dark chocolate">dark chocolate</label>
-			<input type="radio" name="frame" value="chocolate with almonds">
+			<input type="radio" name="candy" value="chocolate with almonds">
 				<label for="chocolate with almonds">chocolate with almonds</label>
-			<input type="radio" name="frame" value="Nutella">
+			<input type="radio" name="candy" value="Nutella">
 				<label for="Nutella">Nutella</label>
-			<input type="radio" name="frame" value="Reese's P.B. Cup">
+			<input type="radio" name="candy" value="Reese's P.B. Cup">
 				<label for="Reese's P.B. Cup">Reese's P.B. Cup</label>
-			<input type="radio" name="frame" value="white chocolate">
+			<input type="radio" name="candy" value="white chocolate">
 				<label for="white chocolate">white chocolate</label>
-			<input type="radio" name="frame" value="other">
+			<input type="radio" name="candy" value="other">
 				<label for="other">Other: </label> <input type="text" name="other-candy">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 		</div>
 		<div>
-			<img src="dist/img/star.png" alt="star">
-			<h3>Accessories</h3>
-			<input type="radio" name="frame" value="peanut butter">
+			<figure class="accessory"></figure>
+			<h2>Accessories</h2>
+			<input type="radio" name="accessory" value="peanut butter">
 				<label for="peanut butter">peanut butter</label>
-			<input type="radio" name="frame" value="banana">
+			<input type="radio" name="accessory" value="banana">
 				<label for="banana">banana</label>
-			<input type="radio" name="frame" value="strawberries">
+			<input type="radio" name="accessory" value="strawberries">
 				<label for="strawberries">strawberries</label>
-			<input type="radio" name="frame" value="caramel sauce">
+			<input type="radio" name="accessory" value="caramel sauce">
 				<label for="caramel sauce">caramel sauce</label>
-			<input type="radio" name="frame" value="cream cheese">
+			<input type="radio" name="accessory" value="cream cheese">
 				<label for="cream cheese">cream cheese</label>
-			<input type="radio" name="frame" value="bacon">
+			<input type="radio" name="accessory" value="bacon">
 				<label for="bacon">bacon</label>
-			<input type="radio" name="frame" value="other">
+			<input type="radio" name="accessory" value="other">
 				<label for="other">Other: </label> <input type="text" name="other-accessory">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 		</div>
 		<section>
 			<label for="smore-name">Name Your S'mores: </label> <input type="text" name="smore-name">
 			<button>Build It</button>
 		</section>
-	</section>
+	</form>
 
 	<section class="inspiration">
-		<h4>Need Some Inspiration?</h4>
+		<h3>Need Some Inspiration?</h3>
 		<div>
-			<h5>Classic</h5>
+			<h4>Classic</h4>
 			<ul>
 				<li>plain graham crackers</li>
 				<li>plain marshmallow</li>
@@ -133,7 +126,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>Elvis</h5>
+			<h4>Elvis</h4>
 			<ul>
 				<li>chocolate graham crackers</li>
 				<li>plain marshmallow</li>
@@ -143,7 +136,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>PB&J</h5>
+			<h4>PB&J</h4>
 			<ul>
 				<li>plain graham crackers</li>
 				<li>plain marshmallow</li>
@@ -153,7 +146,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>Chocolate-Covered Strawberry</h5>
+			<h4>Chocolate-Covered Strawberry</h4>
 			<ul>
 				<li>chocolate graham crackers</li>
 				<li>plain marshmallow</li>
@@ -162,7 +155,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>Thanksgiving Casserole</h5>
+			<h4>Thanksgiving Casserole</h4>
 			<ul>
 				<li>cinnamon graham crackers</li>
 				<li>plain marshmallow</li>
@@ -171,7 +164,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>Nutty</h5>
+			<h4>Nutty</h4>
 			<ul>
 				<li>almond thins cookies</li>
 				<li>plain marshmallow</li>
@@ -179,7 +172,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>Banana Pudding</h5>
+			<h4>Banana Pudding</h4>
 			<ul>
 				<li>Nilla wafers</li>
 				<li>plain marshmallow</li>
@@ -188,7 +181,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>The Monster</h5>
+			<h4>The Monster</h4>
 			<ul>
 				<li>chocolate graham crackers</li>
 				<li>chocolate marshmallow</li>
@@ -197,7 +190,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>Salty-Sweet</h5>
+			<h4>Salty-Sweet</h4>
 			<ul>
 				<li>Ritz crackers</li>
 				<li>plain marshmallow</li>
@@ -206,7 +199,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>Triple Chocolate</h5>
+			<h4>Triple Chocolate</h4>
 			<ul>
 				<li>chocolate graham crackers</li>
 				<li>chocolate marshmallow</li>
@@ -214,7 +207,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>Fruit Salad</h5>
+			<h4>Fruit Salad</h4>
 			<ul>
 				<li>plain graham crackers</li>
 				<li>plain marshmallow</li>
@@ -224,7 +217,7 @@
 			</ul>
 		</div>
 		<div>
-			<h5>Cookies 'N' Cream</h5>
+			<h4>Cookies 'N' Cream</h4>
 			<ul>
 				<li>chocolate graham crackers</li>
 				<li>plain marshmallow</li>

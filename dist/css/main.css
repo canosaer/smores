@@ -151,7 +151,7 @@ table {
 
 body{
 	box-sizing: border-box;
-	font-family: Verdana, sans-serif;
+	font-family: 'PT Serif', serif;;
 	background: #dacebe;
 }
 
@@ -160,82 +160,74 @@ header{
 	flex-wrap: wrap;
 }
 
-header section{
-	order: -1;
-	width: 100%;
-	display: flex;
-}
-
 header div{
-	margin:auto;
-	display: flex;
-	flex-wrap:wrap;
-}
-
-header h1{
-	display: inline;
-}
-
-header ul{
-	display: flex;
-}
-
-header figure{
-	margin: auto;
-	width: 100%;
-}
-
-header figure a{
-	text-decoration: none;
-	color: white;
+	width:100%;
 	display:flex;
-}
-
-header img{
-	height: 100px;
-	margin: 0vh 0.3vw;
-}
-
-header h1{
-	font-size: 4.75rem;
-	letter-spacing: .3rem;
-	margin: 3vh 0vw 1vh;
-}
-
-header h1:first-child{
-	margin-left:auto;
-}
-
-header h1:last-child{
-	margin-right:auto;
+	justify-content: center;
+	margin-bottom: 2vh;
 }
 
 header p{
 	color: white;
-	margin: 0vh auto 2vh;
+	margin: 0vh auto 3vh;
+	font-family: 'Hammersmith One', sans-serif;
 }
 
-nav a{
-	color: red;
+header nav{
+ width: 100%;
+ margin-bottom: 5vh;
 }
 
-nav ul{
+header nav ul{
+	width: 100%;
 	display: flex;
+	justify-content: space-around;
 }
 
-nav li{
-	margin: 0px 1vw;
+header nav li{
 	text-transform: uppercase;
-	font-size: 0.85rem;
 }
 
-header nav:first-child{
-	margin-left:auto;
+header nav a{
+	color: red;
+	font-family: 'Hammersmith One', sans-serif;
 }
 
-header nav:last-child{
-	margin-right:auto;
+.intro{
+	color: #443526;
 }
 
-/* hammersmith 1 for headings
-pt serif for body copy */
+.intro h1{
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-family: 'Hammersmith One', sans-serif;
+	text-align:center;
+	margin-bottom: 3vh;
+}
+
+.intro p{
+	line-height: 1.5;
+	font-size: 1.2rem;
+	padding: 0vh 5vw;
+	margin-bottom: 3vh;
+}
+
+.builder{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.builder div{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.graham{
+	width: 40px;
+  	height: 40px;
+	background: url(../img/icons.png);
+	background-position: 0px 0px;
+}
+
+/* font-family: 'Hammersmith One', sans-serif; - headings */
