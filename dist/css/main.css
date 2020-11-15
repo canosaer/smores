@@ -228,6 +228,7 @@ header nav a{
   	height: 40px;
 	background: url(../img/icons.png);
 	background-position: 0px 0px;
+	color: red;
 }
 
 /* font-family: 'Hammersmith One', sans-serif; - headings */
