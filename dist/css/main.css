@@ -195,6 +195,7 @@ header nav a{
 
 .intro{
 	color: #443526;
+	margin-bottom: 7.5vh;
 }
 
 .intro h1{
@@ -220,14 +221,61 @@ header nav a{
 .builder div{
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	margin: 0vh auto 7vh;
+	width: 90%;
+	border: solid 1px #eae4da;
+	background: #e1d7ca;
 }
 
-.graham{
+.builder figure{
 	width: 40px;
   	height: 40px;
+	margin: -20px auto;
 	background: url(../img/icons.png);
+}
+
+#graham{
 	background-position: 0px 0px;
+}
+
+#marshmallow{
+	background-position: -40px 0px;
+}
+
+#candy{
+	background-position: -80px 0px;
+}
+
+#accessory{
+	background-position: -120px 0px;
+}
+
+form h2{
+	color: #443526;
+	text-transform: uppercase;
+	/* font-weight: bold; */
+	margin: 5vh auto 2vh;
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 1.25rem;
+}
+
+form input[type="radio"]{
+	margin-left: 3vw;
+}
+
+form label{
+	margin: 0vh 1vw;
+	color: #443526;
+}
+
+.row{
+	margin-bottom: 1.5vh;
+	display: flex;
+}
+
+form input[type="text"]{
+	margin-right: 4vw;
+	flex: 2;
 }
 
 /* font-family: 'Hammersmith One', sans-serif; - headings */
