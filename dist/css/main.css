@@ -212,7 +212,6 @@ header nav a{
 	line-height: 1.5;
 	font-size: 1.2rem;
 	padding: 0vh 5vw;
-	margin-bottom: 5vh;
 }
 
 .builder{
@@ -417,9 +416,6 @@ form button:before {
 
 
 @media screen and (min-width: 540px){ small tablet 
-	.intro p{
-		margin-bottom: 0vh;
-	}
 
 	.builder div{
 		width: 43%;
