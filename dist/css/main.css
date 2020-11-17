@@ -176,8 +176,8 @@ header p{
 }
 
 header nav{
- width: 100%;
- margin-bottom: 5vh;
+ 	width: 100%;
+ 	margin-bottom: 5vh;
 }
 
 header nav ul{
@@ -218,6 +218,10 @@ header nav a{
 .builder{
 	display: flex;
 	flex-wrap: wrap;
+}
+
+label{
+	align-self: center;
 }
 
 .builder div{
@@ -299,7 +303,6 @@ form label[for="smore-name"]{
 	text-transform: uppercase;
 	justify-self:center;
 	font-family: 'Hammersmith One', sans-serif;
-	align-self: center;
 }
 
 form input[name="smore-name"]{
@@ -323,7 +326,7 @@ form button{
 form button:before {
 	content: " ";
 	position: absolute;
-	top: 1px;
+	top: auto;
 	left: 1px;
 	right: 1px;
 	bottom: 1px;
@@ -412,7 +415,8 @@ form button:before {
 	margin-left:auto;
 }
 
-@media screen and (min-width: 768px){ /*tablet*/
+
+@media screen and (min-width: 540px){ small tablet 
 	.intro p{
 		margin-bottom: 0vh;
 	}
@@ -429,10 +433,31 @@ form button:before {
 		margin: 0vh auto 6vh 0vw;
 	}
 
+	.builder h2{
+		margin-top: 4vh;
+	}
+
+	.builder label{
+		font-size: 0.875rem;
+	}
+
+	.row{
+		margin-bottom: 1vh;
+	}
+
+	.row:last-child{
+		margin-top: auto;
+	}
+
+	form input[type="text"]{
+		width: 100%;
+		margin-right: 2vw;
+	}
+	
 	.build-it{
 		flex-direction: row;
 		width: 90%;
-		margin: -3vh auto 0vh;
+		margin: -4vh auto 0vh;
 	}
 	
 	.builder .last-row{
@@ -441,20 +466,20 @@ form button:before {
 	}
 
 	form label[for="smore-name"]{
-		margin-right: 0vw;
-		flex: 4;
+		margin: 0vh 2vw 0vh 0vw;
 	}
 
 	form input[name="smore-name"]{
 		padding: 0vh 0vw;
-		flex: 8;
-		margin-right: 1vw;
+		width:100%;
+		margin-right: 2vw;
 	}
 
 	form button{
 		width: 20%;
 		margin: 0vh;
-		font-size: 1rem;
+		font-size: 0.875rem;
+		padding: 1vh 1vw;
 	}
 
 	form button:before {
@@ -465,8 +490,9 @@ form button:before {
 	.inspiration{
 		flex-direction:row;
 		flex-wrap:wrap;
-		width: 80%;
-		margin:0vh auto;
+		width: 90%;
+		margin:0vh auto 2vh;
+		justify-content: space-between;
 	}
 
 	.inspiration h3{
@@ -475,13 +501,216 @@ form button:before {
 	}
 
 	.inspiration div{
-		width: 40%;
+		width: 36%;
+		margin: 0vh 0vw 2vh;
 	}
 
 	.inspiration div:last-child{
 		margin-bottom: 2vh;
 	}
 
+	.bottom-nav div:first-child{
+		order: -1;
+		margin-right: auto;
+	}
+	
+	.bottom-nav div{
+		order: 0;
+	}
+	
+	.bottom-nav div:last-child{
+		order: 1;
+		margin-left: auto;
+	}
+	
+	.pages{
+		width: 66%;
+	}
+	
+	.bottom-nav ul{
+		margin-top: 0vh;
+	}
 }
 
-/* font-family: 'Hammersmith One', sans-serif; - headings */
+
+
+@media screen and (min-width: 768px){  /*large tablet*/
+
+	header nav{
+		position: relative;
+  	}
+
+  	header nav ul{
+		justify-content: start;
+		position: absolute;
+		top: -65px;
+	}
+
+	header nav li{
+		margin: 0vh 2vw;
+		font-size: 0.875rem;
+	}
+
+	header nav li:nth-child(3){
+		margin-left:auto;
+	}
+
+	header div{
+		transform: scale(0.85);
+	}
+
+	header p{
+		margin: -1.5vh auto 1vh;
+	}
+
+	.intro h1{
+		font-size: 2.375rem;
+		margin-bottom: 3vh;
+	}
+
+	.builder div{
+		width: 29%;
+	}
+
+	.builder div:first-child{
+		margin: 0vh 1vw 4vh auto;
+	}
+
+	.builder div:nth-child(2){
+		margin: 0vh 0vw 4vh;
+	}
+
+	.builder div:nth-child(3){
+		margin: 0vh auto 4vh 1vw;
+	}
+
+	.builder div:nth-child(4){
+		width: 90%;
+		margin: 0vh auto 4vh;
+	}
+	
+	.build-it{
+		margin-top: -2vh;
+	}
+	
+	form label[for="smore-name"]{
+		margin: 0vh 2vw 0vh 0vw;
+	}
+
+	form button{
+		font-size: 1rem;
+		padding: 1vh 0vw;
+	}
+
+	.inspiration div{
+		width: 24%;
+	}
+
+	.bottom-nav{
+		margin-top: 0.5vh;
+	}
+	
+	.pages{
+		width: 70%;
+	}
+	
+}
+
+@media screen and (min-width: 1024px){  /*desktop*/
+
+	header div{
+		transform: none;
+	}  
+	
+	header nav ul{
+		top: -50px;
+	}
+
+	header nav li{
+		margin: 0vh 4vw;
+		font-size: 1rem;
+	}
+
+	.intro h1{
+		margin-top: 0vh;
+		font-size: 2.85rem;
+	}
+	
+	.builder div{
+		width: 21%;
+		margin-bottom: 4vh;
+	}
+
+	.builder div:first-child{
+		margin: 0vh 1vw 4vh auto;
+	}
+
+	.builder div:nth-child(2){
+		margin: 0vh 1vw 4vh;
+	}
+
+	.builder div:nth-child(3){
+		margin-left: 1vw;
+		margin: 0vh 1vw 4vh;
+	}
+
+	.builder div:nth-child(4){
+		width: 20%;
+		margin: 0vh auto 4vh 1vw;
+	}
+
+	.builder label{
+		font-size: 0.875rem;
+		margin-left: 0.5vw;
+	}
+
+	form label[for="other"]{
+		margin-right: 0.5vw;
+	}
+
+	form button{
+		width: 15%;
+	}
+
+	form button:before {
+		width: 12.7%;
+	}
+
+	.inspiration div{
+		width: 17%;
+		margin: 0vh 0vw 2vh;
+	}
+
+	.inspiration h4{
+		font-size: 0.875rem;
+		line-height:1.4;
+	}
+
+	.inspiration li{
+		font-size:0.875rem;
+	}
+
+	.inspiration div:last-child{
+		margin-bottom: 2vh;
+	}
+
+	.bottom-nav{
+		width: 50%;
+	}
+
+	.bottom-nav div:first-child{
+		margin-right: auto;
+	}
+
+	.bottom-nav a{
+		padding: 1vh 1vw;
+	}
+
+	.bottom-nav ul{
+		justify-content: space-around;
+	}
+
+
+}
+
+
